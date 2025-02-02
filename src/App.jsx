@@ -24,16 +24,25 @@
 
 //  )
 // }
+
 import { createRoot } from "react-dom/client";
+import { Fragment } from "react"; //
 const root = createRoot(document.getElementById("root"));
 root.render(
 <LearningReasons/>
+
 )
- function LearningReasons(){
-  return (
-    <div>
-      <header><img src="img/React-icon.png" alt="" width='40px' /></header>
-      <main>
+function Header(){
+return(  <>
+  <header>
+       <img src="img/React-icon.png" alt="" width='40px' />
+       </header>
+ </>
+)
+}
+function MainElement (){
+return(
+  <main>
       <h1>Reasons to learn React</h1>
       <ol>
         <li>React is a popular library</li>
@@ -43,7 +52,20 @@ root.render(
         <li>React is a great way to build user interfaces</li>
       </ol>
       </main>
-      <footer><small>2025 All Rights Reserved</small> </footer>
-    </div>
-  )
+)
 }
+function FooterElement (){
+return(
+  <footer><small>2025 All Rights Reserved</small> </footer>
+)
+}
+
+ function LearningReasons(){
+  return (
+    <>
+     <Header/> 
+      <MainElement/>
+      <FooterElement/>
+       </>  //replacement for </Fragment>    
+  )
+}     
