@@ -9,7 +9,7 @@ export default function Header(){
               <li className="nav-list-item">Contact</li>
               </ul>  
               
-         </nav>
+         </nav>   
          </header>
    </>
   )
