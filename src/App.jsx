@@ -27,46 +27,14 @@
 
 import { createRoot } from "react-dom/client";
 import { Fragment } from "react"; //
+import Header from "../Header";  
+import MainElement from "../mainel";
+import FooterElement from "../footer";
+
 const root = createRoot(document.getElementById("root"));
 root.render(
 <LearningReasons/>
-
-)
-function Header(){
-return(  <>
-  <header className="header">
-       <img className="img-nav" src="img/React-icon.png" alt=""  />
-       <nav>
-          <ul className="nav-list">  
-            <li className="nav-list-item">Pricing</li>  
-            <li className="nav-list-item">About</li>
-            <li className="nav-list-item">Contact</li>
-            </ul>  
-            
-       </nav>
-       </header>
- </>
-)
-}
-function MainElement (){
-return(
-  <main>
-      <h1>Reasons to learn React</h1>
-      <ol>
-        <li>React is a popular library</li>
-        <li>React is maintained by Meta</li>
-        <li>React is used by thousands of companies</li>
-        <li>React is a powerful library</li>
-        <li>React is a great way to build user interfaces</li>
-      </ol>
-      </main>
-)
-}
-function FooterElement (){
-return(
-  <footer><small>2025 All Rights Reserved</small> </footer>
-)
-}
+)  
 
  function LearningReasons(){
   return (
