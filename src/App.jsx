@@ -34,8 +34,16 @@ root.render(
 )
 function Header(){
 return(  <>
-  <header>
-       <img src="img/React-icon.png" alt="" width='40px' />
+  <header className="header">
+       <img className="img-nav" src="img/React-icon.png" alt=""  />
+       <nav>
+          <ul className="nav-list">  
+            <li className="nav-list-item">Pricing</li>  
+            <li className="nav-list-item">About</li>
+            <li className="nav-list-item">Contact</li>
+            </ul>  
+            
+       </nav>
        </header>
  </>
 )

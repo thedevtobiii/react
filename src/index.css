@@ -46,6 +46,21 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-nav{
+  width:55px
+}
+.nav-list-item{
+  margin-left: 10px;
+}
+.nav-list{
+  list-style: none;  
+  display: flex;
+}
 button:hover {
   border-color: #646cff;
 }
